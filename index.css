@@ -1,0 +1,212 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-greyish-magenta: hsl(303, 10%, 53%);
+    --light-greyish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    min-width: 320px;
+    min-height: 400px;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.background-top {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+}
+
+.background-bottom {
+    position: absolute;
+    z-index: -100;
+    bottom: 0;
+    right: 0;
+}
+
+#main-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#desktop-row-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-description-big-text {
+    font-size: 28px;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-description-small-text {
+    color: var(--dark-greyish-magenta);
+    margin-bottom: 20px;
+}
+
+#user-testimonies {
+    display: flex;
+    flex-direction: column;
+}
+
+#ratings {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-greyish-magenta);
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 400px;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.rating-text {
+    text-align: center;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+.stars {
+    text-align: center;
+}
+
+.stars img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    padding: 30px;
+    background-color: var(--very-dark-magenta);
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.testimony-identifier {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px
+}
+
+.testimony-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimony-picture img {
+    border-radius: 50%;
+    width: 50%
+}
+
+.testimony-label-name {
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.testimony-label-verification {
+    font-weight: 500;
+    color: var(--soft-pink);
+}
+
+.testimony-text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    #desktop-row-1 {
+        flex-direction: row;
+        height: 50%;
+        justify-content: center;
+    }
+
+    #main-description {
+        width: 40%;
+        text-align: left;
+    }
+
+    #ratings {
+        width: 40%;
+    }
+
+    #user-testimonies {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #main-container {
+        height: 100vh;
+    }
+
+    .desktop-offset-1 {
+        margin-left: 25px;
+    }
+
+    .desktop-offset-2 {
+        margin-left: 75px;
+    }
+
+    .desktop-offset-3 {
+        margin-left: 125px;
+    }
+
+    .desktop-vertical-offset-1 {
+        margin-top: 50px;
+    }
+
+    .desktop-vertical-offset-2 {
+        margin-top: 100px;
+    }
+
+    .main-description-big-text {
+        font-size: 50px;
+    }
+
+    .main-description-small-text {
+        font-size: 18px;
+    }
+
+    .rating {
+        flex-direction: row;
+        justify-content: normal;
+        align-items: center;
+    }
+
+    .testimony {
+        max-width: 300px;
+        margin-right: 25px;
+    }
+    
+}
